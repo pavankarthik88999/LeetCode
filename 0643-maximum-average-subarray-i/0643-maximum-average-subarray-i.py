@@ -3,7 +3,10 @@ class Solution:
         i=0
         j=k-1
         n=len(nums)
-        add=sum(nums[:k])
+        add=0
+        avg=0
+        for m in range(k):
+            add+=nums[m]
         avg=add/k
         while j<n-1:
             add=add-nums[i]
